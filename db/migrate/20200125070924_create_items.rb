@@ -13,7 +13,7 @@ class CreateItems < ActiveRecord::Migration[5.2]
       t.integer :buyer_user_id
       t.integer :saler_user_id
       t.string  :fee_side           null:false
-      t.string  :region              null:false
+      t.string  :region             null:false
       t.string  :sipping_days       null:false
       t.string  :transaction_status null:false
       t.timestamps
