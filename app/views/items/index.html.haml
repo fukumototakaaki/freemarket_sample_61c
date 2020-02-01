@@ -74,6 +74,6 @@
 
 = render "footer"
 .exhibition
-  =link_to "/", class: "exhibition__link" do
+  =link_to new_item_path, class: "exhibition__link" do
     出品
     = fas_icon 'camera', class: "exhibition__link__icon"

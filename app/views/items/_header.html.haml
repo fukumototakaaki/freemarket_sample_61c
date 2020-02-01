@@ -1,8 +1,6 @@
 .header
   .header__container
     .headerTop
-      -# .headerTop__link
-      -# .headerTop__form
       =link_to "/", class: "headerTop__link" do
         =image_tag 'logo-acdd90ac4f472d5a6f7a330d33ab1225.svg', class: 'headerTop__link__image'
       =form_with class: "headerTop__form" do |f|
@@ -12,7 +10,7 @@
     .headerBottom
       .headerBottom__search
         .headerBottom__search__category.hoverList
-          =link_to "/", class: "headerBottom__search__category__link" do
+          =link_to categorys_path, class: "headerBottom__search__category__link" do
             = fa_icon 'list', class: "headerBottom__search__category__link__icon"
             カテゴリーから探す
           %ul.hoverList__list.leftLists
@@ -30,7 +28,7 @@
               =link_to "/", class: "hoverList__list__link" do
                 メンズ
         .headerBottom__search__brand.hoverList
-          =link_to "/", class: "headerBottom__search__brand__link" do
+          =link_to brands_path, class: "headerBottom__search__brand__link" do
             = fa_icon 'tag', class: "headerBottom__search__category__link__icon"
             ブランドから探す
           %ul.hoverList__list.leftLists
@@ -54,11 +52,11 @@
                 ブランド一覧
       %ul.headerBottom__list
         %li.hoverList
-          =link_to "/", class: "headerBottom__list__link" do
+          =link_to like_myinfomation_path(current_user), class: "headerBottom__list__link" do
             = far_icon 'heart', class: "headerBottom__list__link__icon1"
             いいね！一覧
         %li.hoverList
-          =link_to "/", class: "headerBottom__list__link" do
+          =link_to notification_myinfomation_path(current_user), class: "headerBottom__list__link" do
             = far_icon 'bell', class: "headerBottom__list__link__icon1"
             お知らせ
           %ul.hoverList__list
@@ -73,7 +71,7 @@
                     8時間前
                 = fas_icon 'angle-right', class: "hoverList__list__link__icon"
         %li.hoverList
-          =link_to "/", class: "headerBottom__list__link" do
+          =link_to todo_myinfomation_path(current_user), class: "headerBottom__list__link" do
             = fa_icon 'check', class: "headerBottom__list__link__icon1"
             やることリスト
           %ul.hoverList__list
@@ -88,7 +86,7 @@
                     8時間前
                 = fas_icon 'angle-right', class: "hoverList__list__link__icon"
         %li.mypage
-          =link_to "/", class: "headerBottom__list__link" do
+          =link_to myinfomations_path(current_user), class: "headerBottom__list__link" do
             =image_tag 'member_photo_noimage_thumb.png', class: 'headerBottom__list__link__icon2'
             マイページ
           .mypage__list
