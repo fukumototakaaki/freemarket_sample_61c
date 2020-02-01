@@ -1,0 +1,101 @@
+.sidebar
+  %nav.side__bar
+    %ul.side__bar__list
+      %li.side__bar__list__item
+        = link_to myinfomations_path(current_user) do
+          マイページ
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to notification_myinfomation_path(current_user) do
+          お知らせ
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to todo_myinfomation_path(current_user) do
+          やることリスト
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to like_myinfomation_path(current_user) do
+          いいね!一覧
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to new_item_path do
+          出品する
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to listing_items_path do
+          出品した商品-出品中
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to in_progress_items_path do
+          出品した商品-取引中
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to completed_items_path do
+          出品した商品-売却済み
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to purchase_items_path do
+          購入した商品-取引中
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to purchased_items_path do
+          購入した商品-過去の取引
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to news_myinfomation_path(current_user) do
+          ニュース一覧
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to review_myinfomation_path(current_user) do
+          評価一覧
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to "#" do
+          ガイド
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to support_myinfomation_path(current_user) do
+          お問い合わせ
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+    %h1.side__bar__list__head
+      メルペイ
+    %ul.side__bar__list
+      %li.side__bar__list__item
+        = link_to sales_myinfomation_path(current_user) do
+          売上・振込申請
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to point_myinfomation_path(current_user) do
+          ポイント
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+    %h1.side__bar__list__head
+      設定
+    %ul.side__bar__list
+      %li.side__bar__list__item
+        = link_to profile_myinfomation_path(current_user) do
+          プロフィール
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to deliver_address_path(current_user) do
+          発送元・お届け先住所変更
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to card_inner_path do
+          支払い方法
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to email_password_path do
+          メール/パスワード
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to identification_myinfomation_path(current_user) do
+          本人情報
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to sms_confirmation_path(current_user) do
+          電話番号の確認
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
+      %li.side__bar__list__item
+        = link_to logout_path(current_user) do
+          ログアウト
+          = icon('fas', 'chevron-right',class:"side__bar__list__item--icon")
