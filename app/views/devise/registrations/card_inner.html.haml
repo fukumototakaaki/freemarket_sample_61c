@@ -1,0 +1,31 @@
+.header
+  = render 'items/header'
+
+.main
+  .sidebar
+    = render 'myinfomations/sidebar'
+
+  .index
+    .card
+      .card__header
+        %h1 
+          支払い方法
+
+      .card__content
+        .card__content__list
+          .card__content__list__name
+            %h2
+              クレジットカード一覧
+
+          .card__content__list__add
+            = link_to new_card_inner_path, class: "card__content__list__add__btn" do
+              = icon('fas', 'credit-card',class:"card__content__list__add__btn--icon")
+              クレジットカードを追加する
+
+        .card__content__method
+          = link_to "#", class: "card__content__method__btn" do
+            支払い方法について
+            = icon('fas', 'angle-right',class:"card__content__method__btn--icon")
+
+.footer
+  = render 'items/footer'

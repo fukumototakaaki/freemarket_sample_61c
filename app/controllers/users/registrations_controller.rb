@@ -68,30 +68,24 @@ class Users::RegistrationsController < Devise::RegistrationsController
     sign_in(:user, @user)
   end 
 
-  # GET /resource/edit
-  # def edit
-  #   super
-  # end
-
-  # PUT /resource
-  # def update
-  #   super
-  # end
-
-  # DELETE /resource
-  # def destroy
-  #   super
-  # end
-
-  # GET /resource/cancel
-  # Forces the session data which is usually expired after sign
-  # in to be expired now. This is useful if the user wants to
-  # cancel oauth signing in/up in the middle of the process,
-  # removing all OAuth session data.
-  # def cancel
-  #   super
-  # end
-
+  def card__inner
+  end
+  def new_card_inner
+  end
+  def edit_card
+  end
+  def update_card
+  end
+  def edit_deliver_address
+  end
+  def update_deliver_address
+  end
+  def edit_email_password
+  end
+  def edit_sms_confirmation
+  end
+  def update_sms_confirmation
+  end
   protected
 
   # If you have extra params to permit, append them to the sanitizer.
