@@ -94,7 +94,7 @@ Pass：1234abc
 テストアカウントでログイン→トップページの新着アイテムから商品選択→商品購入<br>
 <br>
 確認後、ログアウト処理をお願いします。<br>
-<br><br>
+
 # DB design
 ![2020 0209 データベース ER 図　メルカリ のコピー](https://user-images.githubusercontent.com/57956439/77843503-cdeda680-71d8-11ea-895c-46ec5ade6872.png)
 
