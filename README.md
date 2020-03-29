@@ -1,5 +1,103 @@
-# mercariのDB設計
-​
+![mercari](https://i.gyazo.com/e395d07a2ceebe6b7fa6019bb0a4f2f3.jpg)
+
+
+<h1 align="center">freemarket_sample</h1>
+<br>
+<p align="center">
+<a>　</a>
+<img src="https://user-images.githubusercontent.com/39142850/71774533-1ddf1780-2fb4-11ea-8560-753bed352838.png" width="70px;" />
+<a>　</a>
+<img src="https://user-images.githubusercontent.com/39142850/71774548-731b2900-2fb4-11ea-99ba-565546c5acb4.png" height="60px;" /><br><br>
+<a>　</a><a>　</a>
+<a><img src="https://user-images.githubusercontent.com/39142850/71774618-b32edb80-2fb5-11ea-9050-d5929a49e9a5.png" height="60px;" />
+<a>　</a>
+<a><img src="https://user-images.githubusercontent.com/39142850/71774644-115bbe80-2fb6-11ea-822c-568eabde5228.png" height="60px" />
+<a>　</a>
+<img src="https://user-images.githubusercontent.com/39142850/71774768-d064a980-2fb7-11ea-88ad-4562c59470ae.png" height="65px;" />
+<a>　</a>
+<a><img src="https://user-images.githubusercontent.com/39142850/71774786-37825e00-2fb8-11ea-8b90-bd652a58f1ad.png" height="60px;" />
+</p><br>
+<h3 align="center">- Team Members -</h3>
+<p align="center">
+<b><a><a href="https://github.com/akkt222"><img 
+![profile](https://pbs.twimg.com/media/ES0vfD4UYAEgnp9?format=jpg&name=small)
+src="https://avatars3.githubusercontent.com/u/55902529?s=460&u=6e465470a5482e26b16c6d98027b62aad317b307&v=4" width="100px;" /></a></b><a>　</a>
+<a><a href="https://github.com/fukumototakaaki"><img 
+![profile](https://pbs.twimg.com/media/ES0vfD4UYAEgnp9?format=jpg&name=small)
+src="https://avatars2.githubusercontent.com/u/57784853?s=460&v=4" width="100px;" /></a></b><a>　</a>
+<a><a href="https://github.com/Ynobusa"><img 
+![profile](https://pbs.twimg.com/media/ES0vfD4UYAEgnp9?format=jpg&name=small)
+src="https://avatars3.githubusercontent.com/u/58387687?s=460&v=4" width="100px;" /></a></b><a>　</a>
+<a><a href="https://github.com/annaPanda8170"><img 
+![profile](https://pbs.twimg.com/media/ES0vfD4UYAEgnp9?format=jpg&name=small)
+src="https://avatars0.githubusercontent.com/u/57531048?s=460&v=4" width="100px;" /></a></b><a>　</a>
+<a><a href="https://github.com/shuya-tamaru"><img 
+![profile](https://pbs.twimg.com/media/ES0vfD4UYAEgnp9?format=jpg&name=small)
+src="https://avatars2.githubusercontent.com/u/57956439?s=460&u=ad96feca912e3680b880fdd13e07cc17036a34b3&v=4" width="100px;" /></a></b><a>　</a>
+<br><br><br><br>
+
+# アプリケーション情報
+## 概要
+テックキャンプの最終課題にて作成した、フリーマーケットのクローンアプリケーションです。
+### 接続情報
+- URL：http://13.114.185.113/
+- ID/Pass
+```
+ID：admin
+Pass：2222
+```
+- テスト用アカウント等
+
+購入者用
+```
+E-mail：aaa@aaa
+Pass：abcd123
+```
+購入用カード情報
+```
+番号：4242424242424242
+期限：01/21
+セキュリティコード：123
+```
+出品者用
+```
+E-mail：bbb@bbb
+Pass：1234abc
+```
+
+## 開発状況
+開発期間：2020/1/18～2020/4/4
+開発体制：人数：5名
+　　　　　アジャイル開発（スクラム）
+　　　　　Trelloによるタスク管理
+
+## 動作確認方法
+- Chromeの最新版を利用してアクセスしてください。
+ただしデプロイ等で接続できないタイミングもございます。その際は少し時間をおいてから接続ください。
+- 接続先およびログイン情報については、上記の通りです。
+- 同時に複数の方がログインしている場合に、ログインできない可能性がございます。
+- 出品方法は以下の手順で確認できます。
+テストアカウントでログイン→トップページから出品ボタン押下→商品情報入力→商品出品
+（なお、出品した商品はトップページの人気ブランドのスペースにご指定したブランドの箇所に表示されます。）
+
+また、商品情報編集、商品出品停止、商品削除は以下の手順で確認できます。
+
+- 商品情報編集：
+出品した商品のアイコンを押下→商品の編集ボタン押下→商品情報入力→商品の編集ボタン押下
+- 商品出品停止：
+出品した商品のアイコンを押下→出品を一旦停止するボタン押下
+（なお、出品を再開する場合は、出品した商品のアイコンを押下→出品を再開するボタン押下）
+- 商品削除：
+出品した商品のアイコンを押下→この商品を削除するボタン押下
+
+購入方法は以下の手順で確認できます。
+テストアカウントでログイン→トップページの新着アイテムから商品選択→商品購入
+
+確認後、ログアウト処理をお願いします。
+
+# DB design
+![2020 0209 データベース ER 図　メルカリ のコピー](https://user-images.githubusercontent.com/57956439/77843503-cdeda680-71d8-11ea-895c-46ec5ade6872.png)
+
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -13,17 +111,9 @@
 |birthday_year|integer|null: false|
 |birthday_month|integer|null: false|
 |birthday_date|integer|null: false|
-
 ### Association
 - has_many :items
-- has_many :social_profiles
-- has_many :evaluations
-- has_many :likes
-- has_many :to_dos
-- has_many :news
-- has_many :announces
-- has_many :item_comments
-- has_many :trade_comments
+- has_many :sns_credentials
 - has_one  :cellphone
 - has_one  :address
 - has_one  :card
@@ -32,11 +122,8 @@
 ## cardsテーブル(クレジットカード)
 |Column|Type|Options|
 |------|----|-------|
-|number|integer|null:false|
-|name|string|null:false|
-|validated_date_year|integer|null:false|
-|validated_date_month|integer|null:false|
-|security_number|integer|null:false|
+|customer_id|integer|null:false|
+|card_id|integer|null:false|
 |user|references|null: false, foreign_key:true|
 ### Association
 - belongs_to :user
@@ -50,7 +137,7 @@
 |city|string|null:false|
 |address|string|null:false|
 |building|string||
-|phone_tel|integer||
+|phone_tell|string||
 |user|references|null: false, foreign_key:true|
 ### Association
 - belongs_to :user
@@ -59,144 +146,50 @@
 ## cellphonesテーブル(携帯電話)
 |Column|Type|Options|
 |------|----|-------|
-|number|integer|null: false, unique: true|
+|number|string|null: false, unique: true|
 |user|references|null: false, foreign_key:true|
 ### Association
 - belongs_to :user
 ​
 ​
-## to_doesテーブル(やることリスト)
+## sns_credentialsテーブル(SNSアカウントでログインする機能)
 |Column|Type|Options|
 |------|----|-------|
-|todo|string||
-|user|references|null: false, foreign_key:true|
+|user|references|foreign_key: true|
+|provider|string||
+|uid|string||
 ### Association
 - belongs_to :user
 ​
-​
-## announcesテーブル(お知らせ)
-|Column|Type|Options|
-|------|----|-------|
-|announce|string||
-|user|references|null: false, foreign_key:true|
-### Association
-- belongs_to :user
-​
-​
-## newsテーブル(ニュース一覧)
-|Column|Type|Options|
-|------|----|-------|
-|news|string||
-|user|references|null: false, foreign_key:true|
-### Association
-- belongs_to :user
-​
-​
-## evaluationsテーブル(ユーザーに対する評価)
-|Column|Type|Options|
-|------|----|-------|
-|good_type|integer|null:false|
-|normal_type|integer|null:false|
-|bad_type|integer|null:false|
-|comment|string||
-|user|references|null: false, foreign_key:true|
-### Association
-- belongs_to :user
-​
-​
-## likesテーブル(いいね！)
-|Column|Type|Options|
-|------|----|-------|
-|user|refernces|null: false, foreign_key: true|
-|item|references|null: false, foreign_key: true|
-### Association
-- belongs_to :user
-- belongs_to :item
-​
-​
-## social_profilesテーブル(SNSアカウントでログインする機能)
-|Column|Type|Options|
-|------|----|-------|
-|user|references|null:false, foreign_key: true|
-|provider|string|null: false|
-|uid|string|null:false|
-|access_token|string||
-|refresh_token|string||
-|name|string||
-|nickname|string||
-|email|string||
-### Association
-- belongs_to :user
-​
-​
+
 ## itemsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false, index: true|
+|description|string|null: false|
+|category|references|null: false, index: true, foreign_key: true|
+|brand|references|foreign_key: true, null: false|
+|item_status|integer|null: false|
+|fee_side|integer|null: false|
+|shipping_way|integer|null: false|
+|region|integer|null: false|
+|shipping_days|integer|null: false|
 |price|integer|null: false|
-|size|string||
-|item_status|string|null: false|
-|shipping_charge|string|null: false|
-|shipping_way|string|null: false|
-|discription|string|null: false|
-|brand|refernces|index: true, foreign_key: true|
-|grand_child_category|references|null: false, index: true, foreign_key: true|
-|buyer_user_id|integer||
-|saler_user_id|integer|null: false|
-|fee_side|string|null: false|
-|region|string|null: false|
-|shipping_days|string|null: false|
-|purchase_date|string||
+|buyer_user|references|foreign_key: true|
+|saler_user|references|null: false, foreign_key: true|
+|transaction_status|integer|null:false|
 ### Association
 - belongs_to :user
-- has_many :evaluations
-- has_many :likes
-- has_many :item_comments
-- has_many :trade_comments
-- belongs_to :grandchild_category
+- belongs_to  :category
 - belongs_to :brand
 - has_many :images
-- has_one :transaction_status
-​
-​
-## transaction_statusesテーブル
-|Column|Type|Options|
-|------|----|-------|
-|selling|string||
-|trading|string||
-|sold|string||
-|item|references|null: false, foreign_key: true|
-### Association
-- belongs_to item
-​
-​
-## item_commentsテーブル(商品詳細ページにつくコメント)
-|Column|Type|Options|
-|------|----|-------|
-|text|string||
-|user|references|null: false, foreign_key: true|
-|item|references|null: false, foreign_key: true|
-### Association
-- belongs_to :user
-- belongs_to :item
-​
-​
-## trade_commentsテーブル(取引画面につくコメント)
-|Column|Type|Options|
-|------|----|-------|
-|text|string||
-|user|references|null: false, foreign_key: true|
-|item|references|null: false, foreign_key: true|
-### Association
-- belongs_to :user
-- belongs_to :item
-​
-​
+
+
 ## categoriesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|ancestry|string||
+|ancestry|string|index: true|
 ### Association
 - has_many :items
 - has_ancestry
@@ -214,14 +207,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |image|string|null: false|
-|item|refernces|null: false, foreign_key: true|
+|item|references|null: false, foreign_key: true|
 ### Association
 - belongs_to :item
 ​
-​
-## sizesテーブル
-|Column|Type|Options|
-|------|----|-------|
-|name|string||
-### Association
-- has_many :items
